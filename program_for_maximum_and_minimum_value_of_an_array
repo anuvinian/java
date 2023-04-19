@@ -1,0 +1,35 @@
+//program for maximum and minimum value of an array
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Yoginder yadav,22CSU269");
+        int n;  
+        Scanner sc=new Scanner(System.in);  
+        System.out.print("Enter the number of elements you want to store: ");  
+        n=sc.nextInt();  
+        int[] nums = new int[10];  
+        System.out.println("Enter the elements of the array: ");  
+        for(int i=0; i<n; i++)  
+        {  
+            nums[i]=sc.nextInt();  
+        }  
+        int max = nums[0];
+        int min = nums[0];
+        for (int i = 1; i < nums.length; i++)
+        {
+            if (nums[i] > max) {
+                max = nums[i];
+            }
+ 
+            else if (nums[i] < min) {
+                min = nums[i];
+            }
+        }
+ 
+        System.out.println("The minimum array element is " + min);
+        System.out.println("The maximum array element is " + max);
+    }
+ 
+}

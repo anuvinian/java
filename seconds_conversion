@@ -1,0 +1,18 @@
+//conversion of seconds into minute, hour, days, months, year
+import java.util.*;
+public class conversion_of_minutesss{
+    public static void main(String[] args){
+        System.out.print("Enter the minutes = ");
+        Scanner sc = new Scanner(System.in);
+        double min = sc.nextDouble();
+        double hours = min/60;
+        double days  = hours/24;
+        double months = days/30;
+        double year = months/12;
+System.out.println("Entered minutes are = " + min);
+        System.out.println("Minutes to hours = "+ hours);
+        System.out.println("Minutes to days = "+days );
+        System.out.println("Minutes to months = " + months);
+        System.out.print("Minutes to years = " + year);
+    }
+}
